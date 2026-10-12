@@ -1,2 +1,2 @@
-# White-Trash
-Malware Hub. 
+# C2-Application
+
