@@ -1,2 +1,16 @@
 # C2-Application
-
+White Trash
+White Trash is an open-source remote access tool (RAT) project built around client/server communication. The current version supports basic messaging and connection checks; it does not provide general remote device control.
+Features
+- Server listens on 127.0.0.1:5555 by default.
+- Named clients can connect and send messages.
+- Server commands: PING, STATUS, and DISCONNECT.
+- Messages use newline-delimited JSON.
+Run
+Start the server:
+python3 Server.py
+Then start a client in another terminal:
+python3 client.py
+Use clients, ping <client id>, status <client id>, disconnect <client id>, or quit in the server terminal. Type exit in the client to disconnect.
+Security
+The default address allows connections from the same computer only. The prototype has no encryption or authentication. Use it only on systems you own or are authorized to manage.
