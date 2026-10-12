@@ -16,3 +16,26 @@ Start the server:
 
 ```bash
 python3 Server.py
+```
+
+In another terminal, start a client:
+
+```bash
+python3 client.py
+```
+
+Use these commands in the server terminal:
+
+```text
+clients
+ping <client id>
+status <client id>
+disconnect <client id>
+quit
+```
+
+Type `exit` in the client to disconnect.
+
+## Security
+
+The default address allows connections from the same computer only. The prototype has no encryption or authentication. Use it only on systems you own or are authorized to manage.
